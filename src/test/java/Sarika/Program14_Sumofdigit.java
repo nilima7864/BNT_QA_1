@@ -17,8 +17,8 @@ public class Program14_Sumofdigit {
 	}
 
 	public static void main(String[] args) {
-		String str = "My age 13 , after 5 years i become 18 years old 2 my";
-		String str1 = str+" ";
+		String str = "My age 13 , after 5 years i become 18 years old";
+		String str1 = str + " ";
 		System.out.println(sumofdigit(str1));
 	}
 }

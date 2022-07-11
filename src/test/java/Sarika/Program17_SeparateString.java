@@ -13,6 +13,7 @@ public class Program17_SeparateString {
 		}
 		System.out.println(alpha);
 		System.out.println(num);
+		System.out.println("Final word is--->" + alpha + num);
 	}
 
 	public static void main(String args[]) {
