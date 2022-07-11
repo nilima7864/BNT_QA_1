@@ -1,9 +1,17 @@
+/*Frequency of   word in Sentence :    "Today is monday and today is wonderful day"
+day= 4 times 
+
+Str1=str.repleceAll("day","*") 
+
+"To* is mon* and to* is wonderful *"
+day= 4 times*/
+
 package Sarika;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class FrequencyOfWord {
+public class Program_12_FrequencyOfWord {
 		public static void main(String[] args) {
 		    String givenstring = "Today is monday and today is wonderful day";
 		    String[] words = givenstring.split(" ");
