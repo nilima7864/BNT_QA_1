@@ -18,6 +18,8 @@ public class Assignment_6 {
     	Assignment_6 rd=new Assignment_6();
         rd.findyear("02-06-2022");
 
+        
+       // syso
 
 }
 }
