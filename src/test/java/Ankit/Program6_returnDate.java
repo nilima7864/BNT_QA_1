@@ -8,6 +8,7 @@ public class Program6_returnDate {
       String[] str=s.split("-");
       String date=str[2];
       System.out.println(date);
+      System.out.println(date);
 	return date;
 		
 	}
