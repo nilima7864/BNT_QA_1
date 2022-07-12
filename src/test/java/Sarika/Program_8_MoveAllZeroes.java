@@ -1,3 +1,5 @@
+//move all zeros to end of the array
+//        int a[] = {5,0,3,6,9,5,0,6,0,3,6}
 package Sarika;
 
 import java.util.Arrays;

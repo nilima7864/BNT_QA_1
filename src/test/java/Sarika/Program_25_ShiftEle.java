@@ -1,3 +1,6 @@
+//"Write a program on array which shift element by 
+//i/p  : {5,1,2,7,6,3,4,9}
+//o/p : {1,2,7,6,3,4,9,5}"
 package Sarika;
 
 public class Program_25_ShiftEle {

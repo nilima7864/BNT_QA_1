@@ -1,3 +1,7 @@
+//Write a program that sort array without using any predefined methods
+//i/p  : {5,1,2,7,6,3,4,9}
+//o/p : {1,2,3,4,5,6,7,9}
+
 package Sarika;
 
 import java.util.Arrays;

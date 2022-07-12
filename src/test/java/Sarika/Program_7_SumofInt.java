@@ -1,3 +1,4 @@
+//Write a method which accepts two int value and retun the sum of it 
 package Sarika;
 
 import java.util.Scanner;

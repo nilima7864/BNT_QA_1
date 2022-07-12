@@ -1,3 +1,6 @@
+//How to find the largest and smallest number in an array
+//i/p  : {5,1,2,7,6,3,4,9}
+//o/p : small: 1 & highest: 9
 package Sarika;
 
 import java.util.Arrays;

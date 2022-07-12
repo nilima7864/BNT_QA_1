@@ -1,3 +1,6 @@
+// How to check if two String are Anagram
+//i/p  : keep i/p : peek  o/p : anagram
+//i/p  : hat i/p : cat  o/p : not an anagram
 package Sarika;
 
 import java.util.Arrays;
