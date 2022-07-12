@@ -15,5 +15,8 @@ public class Assgn2_ReverseWord {
 		
 		rev=rev.trim();
 		System.out.println(rev);
+		
+		
+		
 	}
 }
