@@ -13,7 +13,7 @@ public class Program_20_fibonnaci {
 
 		for (i = 1; i <= n; i++) {
 			c = a + b;
-			System.out.print(" " + c);
+			System.out.print(" " + a);
 			a = b;
 			b = c;
 		}
