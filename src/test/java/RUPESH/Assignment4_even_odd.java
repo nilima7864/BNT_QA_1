@@ -1,6 +1,6 @@
 package RUPESH;
 
-public class Assignment_4 {
+public class Assignment4_even_odd {
 	public static boolean isEven(int n)
     {
         return (n % 2 == 0);

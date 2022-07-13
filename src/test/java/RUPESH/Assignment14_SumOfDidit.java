@@ -1,6 +1,6 @@
 package RUPESH;
 
-public class Assignment_14 {
+public class Assignment14_SumOfDidit {
 	 static int sumofdigit(String str) {
 	        String ss = "0";
 	        int sum = 0;

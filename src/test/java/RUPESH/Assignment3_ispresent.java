@@ -1,6 +1,6 @@
 package RUPESH;
 
-public class Assignment_3 {
+public class Assignment3_ispresent {
 	void tocheckwordpresent(String sentece,String word){
 		boolean check = sentece.contains(word);
 		if(check == true){
@@ -10,7 +10,7 @@ public class Assignment_3 {
 		}
 	}
 	public static void main(String[] args) {
-		Assignment_3 n = new Assignment_3();
+		Assignment3_ispresent n = new Assignment3_ispresent();
 		n.tocheckwordpresent ("Today is monday","iss");
 		
 	}

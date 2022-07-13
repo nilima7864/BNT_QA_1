@@ -1,6 +1,6 @@
 package RUPESH;
 
-public class Assignment_2 {
+public class Assignment2_reversestring {
 	public static String reverseWord(String str){  
 	    String words[]=str.split("Today is good day");  
 	    String reverseWord="";  

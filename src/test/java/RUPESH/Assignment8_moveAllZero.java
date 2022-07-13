@@ -1,6 +1,6 @@
 package RUPESH;
 
-public class Assignment_8 {
+public class Assignment8_moveAllZero {
 	public static void main(String[] args) throws Exception {
         int[] array_nums = {5,0,3,6,9,5,0,6,0,3,6};
          int i = 0;

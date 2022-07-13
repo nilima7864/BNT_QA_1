@@ -1,6 +1,6 @@
 package RUPESH;
 
-public class Assignment_12 {
+public class Assignment12_DublicateArray {
 	public static void main(String[] args) {      
         
         

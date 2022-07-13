@@ -1,6 +1,6 @@
 package RUPESH;
 
-public class Assignment_6 {
+public class Assignment6_reternmonth {
 	String findyear(String s)
     {
 
@@ -15,7 +15,7 @@ public class Assignment_6 {
     public static void main(String[] args) {
 
 
-    	Assignment_6 rd=new Assignment_6();
+    	Assignment6_reternmonth rd=new Assignment6_reternmonth();
         rd.findyear("02-06-2022");
 
         

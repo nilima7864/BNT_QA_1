@@ -1,6 +1,6 @@
 package RUPESH;
 
-public class Assignment_10 {
+public class Assignment10_nonRepetatingChar {
 	public static void main(String args[])
     {
         String inputStr ="prepinsta";

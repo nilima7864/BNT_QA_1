@@ -1,6 +1,6 @@
 package RUPESH;
 
-public class Assignment_26 {
+public class Assignment26_VovelsAndCon {
 	public static void main(String[] args) {
 		
 

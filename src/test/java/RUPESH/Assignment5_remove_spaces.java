@@ -1,6 +1,6 @@
 package RUPESH;
 
-public class Assignment_5 {
+public class Assignment5_remove_spaces {
 	
 
 static int removeSpaces(char []str)

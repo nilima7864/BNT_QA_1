@@ -1,6 +1,6 @@
 package RUPESH;
 
-public class Assignment_13 {
+public class Assignment13_LatterFrequency {
 	public static void main(String[] args) {  
         String str = "bnt soft";  
         int[] freq = new int[str.length()];  

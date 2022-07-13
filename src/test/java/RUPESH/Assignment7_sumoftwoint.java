@@ -1,6 +1,6 @@
 package RUPESH;
 
-public class Assignment_7 {
+public class Assignment7_sumoftwoint {
 	  public static void main(String[] args) {          
 	      int a = 65;  
 	        int b = 35;  

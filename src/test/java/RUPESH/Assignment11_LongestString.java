@@ -1,6 +1,6 @@
 package RUPESH;
 
-public class Assignment_11 {
+public class Assignment11_LongestString {
 	public static String longeststr(String[] array) {
         int maxlen = 0;
         String longestString = null;

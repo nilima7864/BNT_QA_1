@@ -1,6 +1,6 @@
 package RUPESH;
 
-public class Assignment_23 {
+public class Assignment23_LargerstNumber {
 	public static void main(String args[]){
 	      int temp, size;
 	      int array[] = {10, 20, 25, 63, 96, 57};

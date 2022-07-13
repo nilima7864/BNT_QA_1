@@ -1,6 +1,6 @@
 package RUPESH;
 
-public class Assignment_one {
+public class Assignment1_reverse_string {
 	public static void main(String[] args) {
 
 		System.out.println("reverse string normal");
