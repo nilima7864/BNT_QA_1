@@ -8,6 +8,7 @@ public class DEomo_2 {
 	
   void main(String[] args) {
 		System.out.println("hhg");
+		System.out.println("java");
 	}
 
 }
