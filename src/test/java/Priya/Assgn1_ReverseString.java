@@ -5,7 +5,7 @@ public class Assgn1_ReverseString {
 	void reverseString(String input) {
 		
 		String output="";
-		for (int index=input.length();index<=0;index--) {
+		for (int index=input.length()-1;index>=0;index--) {
 			output=output+input.charAt(index);
 		}
 		System.out.println(output);
