@@ -14,6 +14,7 @@ public class Program10_NonRepetingCharFromString {
 			{
 			
 				System.out.println(ch);
+				System.out.println("hello");
 				//break;
 			}
 			

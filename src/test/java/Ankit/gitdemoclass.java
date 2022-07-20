@@ -8,11 +8,11 @@ public class gitdemoclass {
 		String str2 = "peek";
 
 		char[] ch = str1.toCharArray();
-		//System.out.println(ch);
+		// System.out.println(ch);
 		Arrays.sort(ch);
-
+		System.out.println("AnagramProgram");
 		char[] ch1 = str2.toCharArray();
-		//System.out.println(ch1);
+		// System.out.println(ch1);
 		Arrays.sort(ch1);
 
 		boolean result = Arrays.equals(ch, ch1);
