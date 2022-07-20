@@ -17,11 +17,10 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WriteWebTableDataInExcel {
-	
+	public static void main(String[] args) throws IOException {
 	WebDriverManager.chromedriver().setup();
 	WebDriver driver = new ChromeDriver();
 	driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
@@ -55,5 +54,4 @@ public class WriteWebTableDataInExcel {
 
 	worrkbook.write(fout);
 
-}
-}
+}}
