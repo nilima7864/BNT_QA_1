@@ -1,9 +1,8 @@
 package Sarika;
 
-public class team {
+public class demoteam {
 public static void main(String[] args) {
 	System.out.println("bnt");
-	System.out.println("Soft");
-
+	System.out.println("soft");
 }
 }
