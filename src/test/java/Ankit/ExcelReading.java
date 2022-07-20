@@ -16,7 +16,7 @@ public class ExcelReading {
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 
 		XSSFSheet sheet = workbook.getSheet("Sheet2"); // by using sheet name
-		// XSSFSheet sheet1 =wb.getSheetAt(0); // by using sheet index number 
+		// XSSFSheet sheet1 =wb.getSheetAt(0); // by using sheet index number
 
 		String data = sheet.getRow(0).getCell(0).getStringCellValue();
 		System.out.println(data);
