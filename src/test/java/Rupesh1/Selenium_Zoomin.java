@@ -15,7 +15,7 @@ public class Selenium_Zoomin {
 	
 	WebDriverManager.chromedriver().setup();
 	WebDriver driver= new ChromeDriver();
-    driver.get("https://www.facebook.com");
+    driver.get("https://www.bnt-soft.com");
     //driver.quit();
     driver.manage().window().maximize();
     System.out.println(driver.manage().window().getSize());
