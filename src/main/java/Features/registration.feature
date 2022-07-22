@@ -44,7 +44,7 @@ Feature: Registration page
 
     Examples: 
       | firstname | lastname  | address | city | state       | zipcode | email               | mobileNumber | verificationCode |
-      | Ankit     | Dhakulkar | wakad   | pune | Maharashtra |  444444 | ankit2022@gmail.com |   9096907736 |               99 |
+      | Ankit     | Dhakulkar | wakad   | pune | Maharashtra |  444444 | ankit2022@gmail.com |   9000000006 |               99 |
 
 
 
