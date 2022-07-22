@@ -22,11 +22,11 @@ public class ReusableClass extends BaseMethods {
 		return text;
 
 	}
-
+	//accepts xpath and return webelement 
 	WebElement element(String path) {
 		return driver.findElement(By.xpath(path));
 	}
-
+	//  select value from provided dropdownxpath, select text as provided 
 	void SelectValuedropdown(String path, String text) {
 		WebElement w = element(path);
 		Select s = new Select(w);
