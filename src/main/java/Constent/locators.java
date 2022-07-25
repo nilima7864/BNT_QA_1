@@ -25,4 +25,8 @@ public class locators {
 	public static final String SubmitButton = "//input[@id='vfb-4']";
 	public static final String actualtext="(//div[@class='elementor-shortcode'])[1]";
     public static final String text="Registration Form is Successfully Submitted. The Transaction ID : NXTGEN1937465";
+    public static final String Window_tab = "//span[contains(text(),'Demo Site – Multiple Windows')]";
+    public static final String Multiple_windows = "//button[contains(text(),'New Browser Window')]";
+    
+  
 }

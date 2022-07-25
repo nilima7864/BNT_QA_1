@@ -1,5 +1,9 @@
 package StepDefinations;
 
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -155,5 +159,58 @@ public class StepDef extends ReusableClass  {
 		Assert.assertEquals(expected, actualtext);
 
 	}
+	
+	@Given("^user click on Automation practice page$")
+	public void user_click_on_Automation_practice_page()  {
+	   WebElement Autolink=driver.findElement(By.xpath("//header/div[@id='site-header-inner']/div[@id='site-navigation-wrap']/nav[@id='site-navigation']/ul[@id='menu-main']/li[@id='menu-item-4131']/a[1]/span[1]"));
+	   Autolink.click();
+	}
+	@When("^click on Practice Page$")
+	public void click_on_Practice_Page()  {
+		WebElement Autoplink=driver.findElement(By.xpath("//header/div[@id='site-header-inner']/div[@id='site-navigation-wrap']/nav[@id='site-navigation']/ul[@id='menu-main']/li[@id='menu-item-4131']/ul[1]/li[3]/a[1]"));
+		   Autoplink.click();  
+	}
 
+	@When("^Select Mulitiple windows$")
+	public void select_Mulitiple_windows()  {
+		WebElement Autoplinkwin=driver.findElement(By.xpath("//span[contains(text(),'Demo Site – Multiple Windows')]"));
+		
+		   Autoplinkwin.click();   
+	}
+	@When("^click on multiwindows$")
+	public void click_on_multiwindows()  {
+	   
+		WebElement Autoplinkwmulin=driver.findElement(By.xpath("//button[contains(text(),'New Browser Window')]"));
+		 
+		   Autoplinkwmulin.click(); 
+		   
+		   }
+		   
+		   
+	
+	
+	@Then("^get window handels$")
+	public void get_window_handels() throws InterruptedException  {
+	
+		driver.findElement(By.xpath("//button[contains(text(),'New Browser Window')]")).click();
+		
+		Set<String> windowsid = driver.getWindowHandles();
+		
+		Iterator<String> itr = windowsid.iterator();
+		
+		String parintid = itr.next();
+		String childid = itr.next();
+		
+		driver.switchTo().window(childid);
+		
+		driver.close();
+		
+		driver.switchTo().window(parintid);
+		
+		driver.findElement(By.xpath("//h1[contains(text(),'Multiple Windows')]")).click();
+					
+			
+		
+	}
 }
+
