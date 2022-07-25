@@ -33,23 +33,27 @@ public class ReusableClass extends BaseMethods {
 	WebElement element(String path) {
 		return driver.findElement(By.xpath(path));
 	}
-	//  select value from provided dropdownxpath, select text as provided 
+  // select value from provided dropdownxpath, select text as provided
+
 	void SelectValuedropdown(String path, String text) {
 		WebElement w = element(path);
 		Select s = new Select(w);
 		s.selectByVisibleText(text);
 	}
 	
-//	void AcceptAlert(WebDriver driver)
-//	{
-//		driver.switchTo().alert().accept();
-//	}
+	//MoveToElement 
 	
-	void Mouseover(WebElement element )
-	{
-		//WebElement w = element(path);
-		Actions act= new Actions(driver);
+	void Mouseover(WebElement element) {
+		// WebElement w = element(path);
+		Actions act = new Actions(driver);
 		act.moveToElement(element).perform();
 	}
+
+	// void AcceptAlert(WebDriver driver)
+	// {
+	// driver.switchTo().alert().accept();
+	// }
+
 	
+
 }
