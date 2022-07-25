@@ -30,7 +30,8 @@ public class StepDef extends ReusableClass  {
 		String path = Constent.locators.QA_AUTOMATION;
 		//WebElement element = driver.findElement(By.xpath(path));
 		WebElement element=reusableClass.element(path);
-		act.moveToElement(element).perform();
+	//	act.moveToElement(element).perform();
+		Mouseover(element);
 
 		String path1 = Constent.locators.Practice_Automation;
 		//WebElement element1 = driver.findElement(By.xpath(path1));
@@ -153,7 +154,7 @@ public class StepDef extends ReusableClass  {
 		String actualtext = reusableClass.GetTextOfWebLement(actual);
 
 		Assert.assertEquals(expected, actualtext);
-
+		reusableClass.CLoseBrowser();
 	}
 
 }

@@ -1,7 +1,9 @@
 package StepDefinations;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class ReusableClass extends BaseMethods {
@@ -32,4 +34,17 @@ public class ReusableClass extends BaseMethods {
 		Select s = new Select(w);
 		s.selectByVisibleText(text);
 	}
+	
+//	void AcceptAlert(WebDriver driver)
+//	{
+//		driver.switchTo().alert().accept();
+//	}
+	
+	void Mouseover(WebElement element )
+	{
+		//WebElement w = element(path);
+		Actions act= new Actions(driver);
+		act.moveToElement(element).perform();
+	}
+	
 }
