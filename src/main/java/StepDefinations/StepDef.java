@@ -13,15 +13,18 @@ import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import junit.framework.Assert;
 
+
 public class StepDef extends ReusableClass {
+
 
 	ReusableClass reusableClass = new ReusableClass();
 
 	@Given("^user launch on the website$")
 	public void user_launch_on_the_website() {
+
 		reusableClass.lunchTheBrpwser();
 	}
-
+	
 	@When("^User land on registration form$")
 	public void user_land_on_registration_form() {
 
@@ -153,7 +156,29 @@ public class StepDef extends ReusableClass {
 		String actualtext = reusableClass.GetTextOfWebLement(actual);
 
 		Assert.assertEquals(expected, actualtext);
-		//reusableClass.CLoseBrowser();
+
+		reusableClass.CLoseBrowser();
+
+	}
+	//Starting Sarika methods
+	@Given("^user lands on alert$")
+	public void user_lands_on_alert() throws Throwable {
+	    
 	}
 
+	@When("^user clicks on alert box$")
+	public void user_clicks_on_alert_box() throws Throwable {
+	   
+	}
+
+	@Then("^alert box should be open$")
+	public void alert_box_should_be_open() throws Throwable {
+	    
+	}
+
+	@When("^user click on ok then alert box should be close$")
+	public void user_click_on_ok_then_alert_box_should_be_close() throws Throwable {
+	  
+	}
+	//Sarika ends
 }
