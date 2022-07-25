@@ -22,7 +22,7 @@ public class BaseMethods {
 	}
 
 	static void CLoseBrowser() {
-		driver.quit();
+		//driver.quit();
 
 	}
 

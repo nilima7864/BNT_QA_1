@@ -13,7 +13,7 @@ import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import junit.framework.Assert;
 
-public class StepDef extends ReusableClass  {
+public class StepDef extends ReusableClass {
 
 	ReusableClass reusableClass = new ReusableClass();
 
@@ -25,18 +25,17 @@ public class StepDef extends ReusableClass  {
 	@When("^User land on registration form$")
 	public void user_land_on_registration_form() {
 
-		Actions act = new Actions(driver);
-
 		String path = Constent.locators.QA_AUTOMATION;
-		//WebElement element = driver.findElement(By.xpath(path));
-		WebElement element=reusableClass.element(path);
-	//	act.moveToElement(element).perform();
+		// WebElement element = driver.findElement(By.xpath(path));
+		WebElement element = reusableClass.element(path);
+		// act.moveToElement(element).perform();
 		Mouseover(element);
 
 		String path1 = Constent.locators.Practice_Automation;
-		//WebElement element1 = driver.findElement(By.xpath(path1));
-		WebElement element1=reusableClass.element(path1);
-		act.moveToElement(element1).perform();
+		// WebElement element1 = driver.findElement(By.xpath(path1));
+		WebElement element1 = reusableClass.element(path1);
+		// act.moveToElement(element1).perform();
+		Mouseover(element1);
 
 		String path2 = Constent.locators.Registration_Form;
 		reusableClass.clickonElement(path2);
@@ -154,7 +153,7 @@ public class StepDef extends ReusableClass  {
 		String actualtext = reusableClass.GetTextOfWebLement(actual);
 
 		Assert.assertEquals(expected, actualtext);
-		reusableClass.CLoseBrowser();
+		//reusableClass.CLoseBrowser();
 	}
 
 }
