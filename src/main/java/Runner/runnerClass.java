@@ -13,8 +13,10 @@ public class runnerClass {
 			features= "./src/main/java/Features",
 			glue="./src/main/java/StepDefinations",
 			dryRun=true,
-			monochrome= true,
-			tags="@Alert1"
+
+			monochrome= false,
+			tags=" @Tc1"
+
 						
 	)
 			
