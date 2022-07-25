@@ -14,7 +14,7 @@ public class runnerClass {
 			glue="./src/main/java/StepDefinations",
 			dryRun=true,
 			monochrome= true,
-			tags=" @Tc1"
+			tags="@Alert1"
 						
 	)
 			

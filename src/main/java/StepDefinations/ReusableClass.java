@@ -14,6 +14,7 @@ public class ReusableClass extends BaseMethods {
 		drive.findElement(By.xpath(path)).click();
 	}
 	
+	
 	//gettext from webElement
 	String GetTextOfWebLement(String path) {
 		String text= drive.findElement(By.xpath(path)).getText();
