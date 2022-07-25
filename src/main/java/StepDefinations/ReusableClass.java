@@ -1,6 +1,7 @@
 package StepDefinations;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class ReusableClass extends BaseMethods {
 
@@ -10,8 +11,8 @@ public class ReusableClass extends BaseMethods {
 	}
 
 	// elemnt click
-	void cliconElement(String path) {
-		drive.findElement(By.xpath(path)).click();
+	void cliconElement(String automationfield) {
+		drive.findElement(By.xpath(automationfield)).click();
 	}
 	
 	
