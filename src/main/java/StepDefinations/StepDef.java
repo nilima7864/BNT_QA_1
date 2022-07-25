@@ -24,28 +24,7 @@ public class StepDef extends ReusableClass  {
 
 		reusableClass.lunchTheBrpwser();
 	}
-
-
-	@When("^android user click on qa automation field$")
-	public void android_user_click_on_qa_automation_field() throws Throwable {
-		String Automationfield= drive.findElement(By.xpath("//span[@class='text-wrap']"));
-		reusableClass.cliconElement(Automationfield);
-	}
-
-	@Then("^demo site alert and popup option should be displayed to android user$")
-	public void demo_site_alert_and_popup_option_should_be_displayed_to_android_user() throws Throwable {
-	}
-
-	@When("^android user click on alert and popup otion$")
-	public void android_user_click_on_alert_and_popup_otion() throws Throwable {
-	}
-
-	@Then("^android user should navigate to alert and popup screen$")
-	public void android_user_should_navigate_to_alert_and_popup_screen() throws Throwable {
-
-		reusableClass.lunchTheBrpwser();
-	}
-
+	
 	@When("^User land on registration form$")
 	public void user_land_on_registration_form() {
 
@@ -181,5 +160,25 @@ public class StepDef extends ReusableClass  {
 		reusableClass.CLoseBrowser();
 
 	}
+	//Starting Sarika methods
+	@Given("^user lands on alert$")
+	public void user_lands_on_alert() throws Throwable {
+	    
+	}
 
+	@When("^user clicks on alert box$")
+	public void user_clicks_on_alert_box() throws Throwable {
+	   
+	}
+
+	@Then("^alert box should be open$")
+	public void alert_box_should_be_open() throws Throwable {
+	    
+	}
+
+	@When("^user click on ok then alert box should be close$")
+	public void user_click_on_ok_then_alert_box_should_be_close() throws Throwable {
+	  
+	}
+	//Sarika ends
 }
