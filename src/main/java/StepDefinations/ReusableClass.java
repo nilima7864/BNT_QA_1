@@ -52,4 +52,17 @@ public class ReusableClass extends BaseMethods {
 		act.moveToElement(element).perform();
 	}
 	
+	//MouseOver overloaded method which accept xpath as a string
+	
+	void Mouseover(String path )
+	{
+		WebElement element = element(path);
+		Actions act= new Actions(driver);
+		act.moveToElement(element).perform();
+	}
+	void isElementDisplayed(String path) {
+		driver.findElement(By.xpath(path)).isDisplayed();
+	} 
+	
+	
 }

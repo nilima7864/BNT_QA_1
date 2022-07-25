@@ -163,22 +163,39 @@ public class StepDef extends ReusableClass  {
 	//Starting Sarika methods
 	@Given("^user lands on alert$")
 	public void user_lands_on_alert() throws Throwable {
-	    
+		String path = Constent.locators.QA_AUTOMATION;
+		reusableClass.Mouseover(path);
+		String path1 = Constent.locators.Practice_Automation;
+		reusableClass.Mouseover(path1);
+		String AlertPopUp = Constent.locators.AlertPopUP;
+		reusableClass.clickonElement(AlertPopUp);
+		String AlertPopUpText= Constent.locators.ALERT_POPUPTEXT;
+		reusableClass.isElementDisplayed(AlertPopUpText);
+		System.out.println("User navigated to the alert popup screen");
+		
 	}
 
 	@When("^user clicks on alert box$")
 	public void user_clicks_on_alert_box() throws Throwable {
-	   
+		String AlertBox = Constent.locators.ALERT_BOX;
+		reusableClass.clickonElement(AlertBox);
+		System.out.println("User click on alert box");
+		
 	}
 
 	@Then("^alert box should be open$")
 	public void alert_box_should_be_open() throws Throwable {
-	    
+		String text=driver.switchTo().alert().getText();
+		System.out.println(text);
+		driver.switchTo().alert().accept();
+		System.out.println("User click on ok button");  
 	}
 
 	@When("^user click on ok then alert box should be close$")
 	public void user_click_on_ok_then_alert_box_should_be_close() throws Throwable {
-	  
+		String AlertPopUpText= Constent.locators.ALERT_POPUPTEXT;
+		reusableClass.isElementDisplayed(AlertPopUpText);
+		System.out.println("Alert pop up text displayed to user");
 	}
 	//Sarika ends
 }

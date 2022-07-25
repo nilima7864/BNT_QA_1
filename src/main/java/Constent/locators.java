@@ -25,4 +25,7 @@ public class locators {
 	public static final String SubmitButton = "//input[@id='vfb-4']";
 	public static final String actualtext="(//div[@class='elementor-shortcode'])[1]";
     public static final String text="Registration Form is Successfully Submitted. The Transaction ID : NXTGEN1937465";
+    public static final String AlertPopUP=  "//span[text()='Demo Site – Alert and Popup']";
+    public static final String ALERT_POPUPTEXT= "//h1[text()='Alert and PopUp']";
+    public static final String ALERT_BOX= "//button[@name='alertbox']";
 }
