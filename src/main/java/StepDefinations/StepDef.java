@@ -28,7 +28,8 @@ public class StepDef extends ReusableClass  {
 
 	@When("^User land on registration form$")
 	public void user_land_on_registration_form() {
-
+       
+		
 		Actions act = new Actions(driver);
 
 		String path = Constent.locators.QA_AUTOMATION;
