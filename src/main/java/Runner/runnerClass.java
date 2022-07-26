@@ -7,19 +7,12 @@ import cucumber.api.junit.Cucumber;
 
 public class runnerClass {
 
-	
 	@RunWith(Cucumber.class)
-	@CucumberOptions(
-			features= "./src/main/java/Features",
-			glue="./src/main/java/StepDefinations",
-			dryRun=true,
-			monochrome= true,
-			tags=" @Tc3"
-						
+
+
 	)
-			
+
 	public class testRunner {
-		
 
 	}
 
