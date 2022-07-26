@@ -6,6 +6,10 @@ import cucumber.api.java.Before;
 public class Hooks extends BaseMethods{
 
 	@Before
+	void b2(){
+		System.out.println("I am b2");
+	}
+	@Before
 	public void beforeScenario() {
 		System.out.println("Run Before the Scenario");
 	}
