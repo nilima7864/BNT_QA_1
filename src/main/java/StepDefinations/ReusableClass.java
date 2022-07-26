@@ -1,12 +1,10 @@
 package StepDefinations;
 
 import org.openqa.selenium.By;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-
 
 public class ReusableClass extends BaseMethods {
 
@@ -15,34 +13,32 @@ public class ReusableClass extends BaseMethods {
 		driver.findElement(By.xpath(path)).sendKeys(text);
 	}
 
-	
-	//gettext from webElement
-
+	// elemnt click
 	void clickonElement(String path) {
 		driver.findElement(By.xpath(path)).click();
 	}
 
 	// gettext from webElement
-
 	String GetTextOfWebLement(String path) {
 		String text = driver.findElement(By.xpath(path)).getText();
 		return text;
 
 	}
-	//accepts xpath and return webelement 
+
+	// accepts xpath and return webelement
 	WebElement element(String path) {
 		return driver.findElement(By.xpath(path));
 	}
-  // select value from provided dropdownxpath, select text as provided
 
+	// select value from provided dropdownxpath, select text as provided
 	void SelectValuedropdown(String path, String text) {
 		WebElement w = element(path);
 		Select s = new Select(w);
 		s.selectByVisibleText(text);
 	}
-	
-	//MoveToElement 
-	
+
+	// MoveToElement
+
 	void Mouseover(WebElement element) {
 		// WebElement w = element(path);
 		Actions act = new Actions(driver);
@@ -53,7 +49,5 @@ public class ReusableClass extends BaseMethods {
 	// {
 	// driver.switchTo().alert().accept();
 	// }
-
-	
 
 }
