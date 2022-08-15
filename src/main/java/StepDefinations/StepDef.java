@@ -13,9 +13,7 @@ import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import junit.framework.Assert;
 
-
-public class StepDef extends ReusableClass  {
-
+public class StepDef extends ReusableClass {
 
 	ReusableClass reusableClass = new ReusableClass();
 
@@ -24,21 +22,21 @@ public class StepDef extends ReusableClass  {
 
 		reusableClass.lunchTheBrpwser();
 	}
-	
+
 	@When("^User land on registration form$")
 	public void user_land_on_registration_form() {
 
 		Actions act = new Actions(driver);
 
 		String path = Constent.locators.QA_AUTOMATION;
-		//WebElement element = driver.findElement(By.xpath(path));
-		WebElement element=reusableClass.element(path);
-	//	act.moveToElement(element).perform();
+		// WebElement element = driver.findElement(By.xpath(path));
+		WebElement element = reusableClass.element(path);
+		// act.moveToElement(element).perform();
 		Mouseover(element);
 
 		String path1 = Constent.locators.Practice_Automation;
-		//WebElement element1 = driver.findElement(By.xpath(path1));
-		WebElement element1=reusableClass.element(path1);
+		// WebElement element1 = driver.findElement(By.xpath(path1));
+		WebElement element1 = reusableClass.element(path1);
 		act.moveToElement(element1).perform();
 
 		String path2 = Constent.locators.Registration_Form;
@@ -160,7 +158,8 @@ public class StepDef extends ReusableClass  {
 		reusableClass.CLoseBrowser();
 
 	}
-	//Starting Sarika methods
+
+	// Starting Sarika methods
 	@Given("^user lands on alert$")
 	public void user_lands_on_alert() throws Throwable {
 		String path = Constent.locators.QA_AUTOMATION;
@@ -169,10 +168,10 @@ public class StepDef extends ReusableClass  {
 		reusableClass.Mouseover(path1);
 		String AlertPopUp = Constent.locators.AlertPopUP;
 		reusableClass.clickonElement(AlertPopUp);
-		String AlertPopUpText= Constent.locators.ALERT_POPUPTEXT;
+		String AlertPopUpText = Constent.locators.ALERT_POPUPTEXT;
 		reusableClass.isElementDisplayed(AlertPopUpText);
 		System.out.println("User navigated to the alert popup screen");
-		
+
 	}
 
 	@When("^user clicks on alert box$")
@@ -180,22 +179,72 @@ public class StepDef extends ReusableClass  {
 		String AlertBox = Constent.locators.ALERT_BOX;
 		reusableClass.clickonElement(AlertBox);
 		System.out.println("User click on alert box");
-		
+
 	}
 
 	@Then("^alert box should be open$")
 	public void alert_box_should_be_open() throws Throwable {
-		String text=driver.switchTo().alert().getText();
+		String text = driver.switchTo().alert().getText();
 		System.out.println(text);
 		driver.switchTo().alert().accept();
-		System.out.println("User click on ok button");  
+		System.out.println("User click on ok button");
 	}
 
 	@When("^user click on ok then alert box should be close$")
 	public void user_click_on_ok_then_alert_box_should_be_close() throws Throwable {
-		String AlertPopUpText= Constent.locators.ALERT_POPUPTEXT;
+		String AlertPopUpText = Constent.locators.ALERT_POPUPTEXT;
 		reusableClass.isElementDisplayed(AlertPopUpText);
 		System.out.println("Alert pop up text displayed to user");
 	}
-	//Sarika ends
+
+	@When("^user click on confirm alert box$")
+	public void user_click_on_confirm_alert_box() throws Throwable {
+		String ConfirmAlertBox = Constent.locators.CONFIRM_ALERT_BOX;
+		reusableClass.clickonElement(ConfirmAlertBox);
+		System.out.println("User click on confirm alert box");
+
+	}
+
+	@Then("^confirm alert box should be displayed to user$")
+	public void confirm_alert_box_should_be_displayed_to_user() throws Throwable {
+		String ConfirmAlerttext = driver.switchTo().alert().getText();
+		//reusableClass.isElementDisplayed(ConfirmAlerttext);
+		System.out.println("Confirm alert box displayed to user");
+
+	}
+
+	@When("^user perform the action$")
+	public void user_perform_the_action() throws Throwable {
+		driver.switchTo().alert().dismiss();
+		System.out.println("User cancle the confirmation pop up box");
+	}
+
+	@Then("^confirm alert box should be close$")
+	public void confirm_alert_box_should_be_close() throws Throwable {
+		String AlertPopUpText = Constent.locators.ALERT_POPUPTEXT;
+		reusableClass.isElementDisplayed(AlertPopUpText);
+		System.out.println("alert pop up text displayed to user");
+	}
+
+	@When("^user click on prompt alert box$")
+	public void user_click_on_prompt_alert_box() throws Throwable {
+		String PromptAlertBox = Constent.locators.PROMPT_ALERT_BOX;
+		reusableClass.clickonElement(PromptAlertBox);
+		System.out.println("User click on prompt alert box");
+	}
+
+	@Then("^prompt alert box should be displayed to user$")
+	public void prompt_alert_box_should_be_displayed_to_user() throws Throwable {
+		String ConfirmAlerttext = driver.switchTo().alert().getText();
+		System.out.println(ConfirmAlerttext);
+
+	}
+
+	@Then("^prompt alert box should be close$")
+	public void prompt_alert_box_should_be_close() throws Throwable {
+		String AlertPopUpText = Constent.locators.ALERT_POPUPTEXT;
+		reusableClass.isElementDisplayed(AlertPopUpText);
+		System.out.println("alert pop up text displayed to user");
+	}
+	// Sarika ends
 }

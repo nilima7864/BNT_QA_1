@@ -28,4 +28,6 @@ public class locators {
     public static final String AlertPopUP=  "//span[text()='Demo Site – Alert and Popup']";
     public static final String ALERT_POPUPTEXT= "//h1[text()='Alert and PopUp']";
     public static final String ALERT_BOX= "//button[@name='alertbox']";
+    public static final String  CONFIRM_ALERT_BOX ="//button[@name='confirmalertbox']";
+    public static final String PROMPT_ALERT_BOX="//button[@name='promptalertbox1234']";
 }
